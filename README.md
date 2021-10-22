@@ -20,7 +20,7 @@ e controle de vendas de álcool gel.
 Para iniciar crie uma database com o nome sistema_alcoolmais
 - SQL disponível dentro da pasta classes/config
 
-Após, só iniciar o sistema no teu localhost/sistema_alcoolmais.index.php
+Após, só iniciar o sistema no teu localhost/sistema_alcoolmais/index.php
 
 
 
