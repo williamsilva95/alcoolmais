@@ -1,0 +1,246 @@
+
+  
+main.container {
+    background: white;
+    min-width: 320px;
+    min-height: 85vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    color: #69A8DB;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: #D13235;
+}
+
+.home_content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active~.home_content {
+    z-index: 100;
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 10%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-field.register {
+    background: #69A8DB;
+    text-align: center!important;
+}
+
+.footer .social-field.register:hover {
+    letter-spacing: 0.5px;
+    background: #69A8DB;
+}
+
+
+
+
+/* TABELA */
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    font-size: small;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: 0.8rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  td{
+      background-color: #fff;
+  }
+
+  thead th {
+    color: #69A8DB;
+  }
+
+  .button_edit {
+    line-height: 1;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    background-color: #69A8DB;
+  }
+  .button_edit:hover {
+    letter-spacing: 0.5px;
+  }
+
+  .button_delete {
+    line-height: 1;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    background-color: #D13235;
+  }
+  .button_delete:hover {
+    letter-spacing: 0.5px;
+  }
+  
+
+  
+  @media (min-width: 460px) {
+    td {
+      text-align: left;
+    }
+    td:before {
+      display: inline-block;
+      text-align: right;
+      width: 140px;
+    }
+  
+    .select {
+      padding-left: 160px;
+    }
+  }
+  @media (min-width: 720px) {
+    table {
+      display: table;
+    }
+  
+    tr {
+      display: table-row;
+    }
+  
+    td, th {
+      display: table-cell;
+    }
+  
+    tbody {
+      display: table-row-group;
+    }
+  
+    thead {
+      display: table-header-group;
+    }
+  
+    tfoot {
+      display: table-footer-group;
+    }
+  
+    td:before {
+      display: none;
+    }
+  
+    td, th {
+      padding: 10px;
+    }
+    tfoot th {
+      display: table-cell;
+    }
+  
+    .select {
+      padding: 10px;
+    }
+  }
+
+
+  
